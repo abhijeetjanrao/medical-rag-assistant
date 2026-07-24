@@ -1,0 +1,15 @@
+# Local environment files
+backend/.env
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Local DB and vector store
+backend/chroma_db/
+chroma_db/
+
+# Data (PDFs, large files)
+data/medical_pdfs/

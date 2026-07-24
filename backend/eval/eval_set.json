@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What are the WHO five moments for hand hygiene?",
+    "ground_truth": "The WHO Five Moments for Hand Hygiene are: (1) before touching a patient, (2) before a clean or aseptic procedure, (3) after body fluid exposure risk, (4) after touching a patient, and (5) after touching patient surroundings.",
+    "expected_sources": ["WHO_IER_PSP_2009_07_eng.pdf"]
+  },
+  {
+    "question": "How long should hands be rubbed with an alcohol-based handrub versus washed with soap and water?",
+    "ground_truth": "Alcohol-based handrub should be applied for 20-30 seconds, covering all surfaces of the hands until dry. Handwashing with soap and water should take 40-60 seconds.",
+    "expected_sources": ["WHO_IER_PSP_2009_07_eng.pdf"]
+  },
+  {
+    "question": "How many days after rash onset should a measles patient remain in airborne precautions?",
+    "ground_truth": "Patients with measles should remain in Airborne Precautions for 4 days after the onset of rash. Immunocompromised patients should remain in Airborne Precautions for the duration of illness due to prolonged virus shedding.",
+    "expected_sources": ["Guideline-Measles-Interim-IC-Recs-H.pdf"]
+  },
+  {
+    "question": "What respiratory protection should healthcare personnel use when caring for a patient with suspected measles?",
+    "ground_truth": "Healthcare personnel should use respiratory protection at least as protective as a fit-tested, NIOSH-certified disposable N95 filtering facepiece respirator, regardless of presumptive evidence of immunity, upon entry to the room of a patient with known or suspected measles.",
+    "expected_sources": ["Guideline-Measles-Interim-IC-Recs-H.pdf"]
+  },
+  {
+    "question": "How soon after a measles exposure must MMR vaccine or immunoglobulin be given for post-exposure prophylaxis?",
+    "ground_truth": "Measles post-exposure prophylaxis with MMR vaccine must be given within 72 hours of first exposure, and post-exposure prophylaxis with immunoglobulin (IG) must be given within 6 days of first exposure.",
+    "expected_sources": ["Measles-Exposure-Guide-HC-Settings-508.pdf"]
+  },
+  {
+    "question": "What defines a shared air space for measles exposure purposes in a healthcare setting?",
+    "ground_truth": "A shared air space refers to any space or room that shares a common air handling system, ranging from smaller spaces like a patient room or clinic waiting area to larger spaces such as an emergency department with multiple areas sharing a common unfiltered air source.",
+    "expected_sources": ["Measles-Exposure-Guide-HC-Settings-508.pdf"]
+  }
+]

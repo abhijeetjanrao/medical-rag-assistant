@@ -1,0 +1,43 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: raguser
+      POSTGRES_PASSWORD: devpass
+      POSTGRES_DB: medical_rag
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U raguser"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DB_URL: postgresql://raguser:devpass@db:5432/medical_rag
+    volumes:
+      - ./backend/chroma_db:/app/chroma_db
+      - ./data:/app/../data
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    environment:
+      API_URL: http://backend:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

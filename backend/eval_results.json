@@ -1,0 +1,11 @@
+{
+  "retrieval_precision_at_k": 0.6666666666666666,
+  "ragas": {
+    "faithfulness": NaN,
+    "context_precision": NaN,
+    "answer_relevancy": NaN
+  },
+  "latency_p50_ms": 7983.499765396118,
+  "latency_p95_ms": 8739.223957061768,
+  "n_queries": 6
+}
